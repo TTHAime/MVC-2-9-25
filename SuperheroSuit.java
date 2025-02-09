@@ -27,7 +27,7 @@ public class SuperheroSuit {
         return durability;
     }
 
-    // ป้องกันไม่ให้ durability > 100
+    // ซ่อม suit และ ป้องกันไม่ให้ durability > 100
     public void repair() {
         if (durability < 100) {
             int oldDurability = durability;
@@ -38,7 +38,7 @@ public class SuperheroSuit {
         }
     }
 
-    //ตรวจสอบ durability ว่าต้องซ่อมหรือไม่
+    //ตรวจสอบ durability ว่าผ่านเกณฑ์หรือไม่
     public boolean isValid() {
         switch (type) {
             case "Powerful":
